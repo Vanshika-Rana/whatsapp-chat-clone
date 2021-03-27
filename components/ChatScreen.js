@@ -14,10 +14,11 @@ import Message from "./Message";
 import firebase from "firebase";
 import getRecipientEmail from "../utils/getRecipientEmail";
 import TimeAgo from "timeago-react";
-
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 
 function ChatScreen({ chat, messages }) {
+    const routerback = useRouter();
     const [user] = useAuthState(auth);
     const [input, setInput] = useState("");
     const endOfMessagesRef = useRef(null);
@@ -90,6 +91,7 @@ function ChatScreen({ chat, messages }) {
     return (
         <Container>
             <Header>
+                <ArrowBackIcon onClick={() => routerback.back()}/>
                 {recipient ? (
                     <Avatar src={recipient?.photoURL} />
                 ) : (

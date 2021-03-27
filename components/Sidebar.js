@@ -44,7 +44,7 @@ function Sidebar() {
         <Container>
             <Header>
                 <UserAvatar src={user.photoURL} onClick={() => auth.signOut()} />
-                
+                <HeadHome>Whatsapp Clone</HeadHome>
                 <IconsContainer>
                     <IconButton>
                         <ChatIcon />
@@ -75,11 +75,10 @@ function Sidebar() {
 export default Sidebar
 
 const Container = styled.div`
-    flex:0.45;
+    flex:1;
     border-right:1px solid whitesmoke;
     height:100vh;
-    min-width: 0px;
-    max-width:350px;
+    background-color: white;
     overflow-y:scroll;
  
     ::-webkit-scrollbar{
@@ -97,12 +96,15 @@ const Search = styled.div`
     align-items:center;
     padding: 20px;
     border-radius:2px;
+    
 `;
 
 const SidebarButton = styled(Button)`
     width:100%;
+    
 
     &&&{
+        background-color: whitesmoke;
     border-top:1px solid whitesmoke;
     border-bottom:1px solid whitesmoke;
     }
@@ -112,13 +114,15 @@ const SearchInput = styled.input`
     outline-width: 0;
     border:none;
     flex: 1;
+    background-color: white;
+    
 `;
 
 const Header = styled.div`
     display:flex;
     position:sticky;
     top: 0;
-    background-color: white;
+    background-color: #075e54;
     z-index: 1;
     justify-content: space-between;
     align-items: center;
@@ -135,3 +139,10 @@ const UserAvatar = styled(Avatar)`
 `;
 
 const IconsContainer = styled.div``;
+
+const HeadHome = styled.h1`
+    font-size:20px;
+    align-items: center;
+    color:white;
+`;
+
