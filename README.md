@@ -4,12 +4,25 @@ A whatsapp chat clone built using next.js for front-end rendering , firebase for
 ## How to use
 
 Step 1: Click on the live link
+
+
 Step 2: Sign in using your google account
+
+
 Step 3 Voila! Your account is set up, Now start a new chat with your friend (who has an account already) , for now you can text me rvanshika172@gmail.com
+
+
 Step 4: After adding your friend, click on the newly created chat --> it will take you to the Chat Screen
+
+
 Step 5: Now go ahead and have a fun conversation
+
+
 Step 6 : to Log Out , come back to the home screen and click on your avatar ( at top left corner)
+
+
 Step 7: You are signed out!
+
 
 You can find last active time of a person below there avatar in chat screen
 Happy Messaging!
